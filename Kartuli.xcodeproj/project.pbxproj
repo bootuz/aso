@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0423BBB29731486006C4A20 /* KartuliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BBA29731486006C4A20 /* KartuliApp.swift */; };
+		C0423BBD29731486006C4A20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BBC29731486006C4A20 /* ContentView.swift */; };
+		C0423BBF29731487006C4A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0423BBE29731487006C4A20 /* Assets.xcassets */; };
+		C0423BC229731487006C4A20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0423BC129731487006C4A20 /* Preview Assets.xcassets */; };
+		C0423BCC29731487006C4A20 /* KartuliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BCB29731487006C4A20 /* KartuliTests.swift */; };
+		C0423BD629731487006C4A20 /* KartuliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BD529731487006C4A20 /* KartuliUITests.swift */; };
+		C0423BD829731487006C4A20 /* KartuliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BD729731487006C4A20 /* KartuliUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0423BC829731487006C4A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0423BAF29731486006C4A20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0423BB629731486006C4A20;
+			remoteInfo = Kartuli;
+		};
+		C0423BD229731487006C4A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0423BAF29731486006C4A20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0423BB629731486006C4A20;
+			remoteInfo = Kartuli;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0423BB729731486006C4A20 /* Kartuli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kartuli.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0423BBA29731486006C4A20 /* KartuliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartuliApp.swift; sourceTree = "<group>"; };
+		C0423BBC29731486006C4A20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C0423BBE29731487006C4A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0423BC129731487006C4A20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C0423BC729731487006C4A20 /* KartuliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KartuliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0423BCB29731487006C4A20 /* KartuliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartuliTests.swift; sourceTree = "<group>"; };
+		C0423BD129731487006C4A20 /* KartuliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KartuliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0423BD529731487006C4A20 /* KartuliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartuliUITests.swift; sourceTree = "<group>"; };
+		C0423BD729731487006C4A20 /* KartuliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartuliUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0423BB429731486006C4A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0423BC429731487006C4A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0423BCE29731487006C4A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0423BAE29731486006C4A20 = {
+			isa = PBXGroup;
+			children = (
+				C0423BB929731486006C4A20 /* Kartuli */,
+				C0423BCA29731487006C4A20 /* KartuliTests */,
+				C0423BD429731487006C4A20 /* KartuliUITests */,
+				C0423BB829731486006C4A20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0423BB829731486006C4A20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0423BB729731486006C4A20 /* Kartuli.app */,
+				C0423BC729731487006C4A20 /* KartuliTests.xctest */,
+				C0423BD129731487006C4A20 /* KartuliUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0423BB929731486006C4A20 /* Kartuli */ = {
+			isa = PBXGroup;
+			children = (
+				C0423BBA29731486006C4A20 /* KartuliApp.swift */,
+				C0423BBC29731486006C4A20 /* ContentView.swift */,
+				C0423BBE29731487006C4A20 /* Assets.xcassets */,
+				C0423BC029731487006C4A20 /* Preview Content */,
+			);
+			path = Kartuli;
+			sourceTree = "<group>";
+		};
+		C0423BC029731487006C4A20 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C0423BC129731487006C4A20 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C0423BCA29731487006C4A20 /* KartuliTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0423BCB29731487006C4A20 /* KartuliTests.swift */,
+			);
+			path = KartuliTests;
+			sourceTree = "<group>";
+		};
+		C0423BD429731487006C4A20 /* KartuliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0423BD529731487006C4A20 /* KartuliUITests.swift */,
+				C0423BD729731487006C4A20 /* KartuliUITestsLaunchTests.swift */,
+			);
+			path = KartuliUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0423BB629731486006C4A20 /* Kartuli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0423BDB29731487006C4A20 /* Build configuration list for PBXNativeTarget "Kartuli" */;
+			buildPhases = (
+				C0423BB329731486006C4A20 /* Sources */,
+				C0423BB429731486006C4A20 /* Frameworks */,
+				C0423BB529731486006C4A20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kartuli;
+			productName = Kartuli;
+			productReference = C0423BB729731486006C4A20 /* Kartuli.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0423BC629731487006C4A20 /* KartuliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0423BDE29731487006C4A20 /* Build configuration list for PBXNativeTarget "KartuliTests" */;
+			buildPhases = (
+				C0423BC329731487006C4A20 /* Sources */,
+				C0423BC429731487006C4A20 /* Frameworks */,
+				C0423BC529731487006C4A20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0423BC929731487006C4A20 /* PBXTargetDependency */,
+			);
+			name = KartuliTests;
+			productName = KartuliTests;
+			productReference = C0423BC729731487006C4A20 /* KartuliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0423BD029731487006C4A20 /* KartuliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0423BE129731487006C4A20 /* Build configuration list for PBXNativeTarget "KartuliUITests" */;
+			buildPhases = (
+				C0423BCD29731487006C4A20 /* Sources */,
+				C0423BCE29731487006C4A20 /* Frameworks */,
+				C0423BCF29731487006C4A20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0423BD329731487006C4A20 /* PBXTargetDependency */,
+			);
+			name = KartuliUITests;
+			productName = KartuliUITests;
+			productReference = C0423BD129731487006C4A20 /* KartuliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0423BAF29731486006C4A20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C0423BB629731486006C4A20 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C0423BC629731487006C4A20 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C0423BB629731486006C4A20;
+					};
+					C0423BD029731487006C4A20 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C0423BB629731486006C4A20;
+					};
+				};
+			};
+			buildConfigurationList = C0423BB229731486006C4A20 /* Build configuration list for PBXProject "Kartuli" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0423BAE29731486006C4A20;
+			productRefGroup = C0423BB829731486006C4A20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0423BB629731486006C4A20 /* Kartuli */,
+				C0423BC629731487006C4A20 /* KartuliTests */,
+				C0423BD029731487006C4A20 /* KartuliUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0423BB529731486006C4A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0423BC229731487006C4A20 /* Preview Assets.xcassets in Resources */,
+				C0423BBF29731487006C4A20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0423BC529731487006C4A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0423BCF29731487006C4A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0423BB329731486006C4A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0423BBD29731486006C4A20 /* ContentView.swift in Sources */,
+				C0423BBB29731486006C4A20 /* KartuliApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0423BC329731487006C4A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0423BCC29731487006C4A20 /* KartuliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0423BCD29731487006C4A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0423BD629731487006C4A20 /* KartuliUITests.swift in Sources */,
+				C0423BD829731487006C4A20 /* KartuliUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0423BC929731487006C4A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0423BB629731486006C4A20 /* Kartuli */;
+			targetProxy = C0423BC829731487006C4A20 /* PBXContainerItemProxy */;
+		};
+		C0423BD329731487006C4A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0423BB629731486006C4A20 /* Kartuli */;
+			targetProxy = C0423BD229731487006C4A20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C0423BD929731487006C4A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0423BDA29731487006C4A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0423BDC29731487006C4A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kartuli/Preview Content\"";
+				DEVELOPMENT_TEAM = KHNA6PF8QV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nart.Kartuli;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0423BDD29731487006C4A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kartuli/Preview Content\"";
+				DEVELOPMENT_TEAM = KHNA6PF8QV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nart.Kartuli;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0423BDF29731487006C4A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHNA6PF8QV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nart.KartuliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kartuli.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kartuli";
+			};
+			name = Debug;
+		};
+		C0423BE029731487006C4A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHNA6PF8QV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nart.KartuliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kartuli.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kartuli";
+			};
+			name = Release;
+		};
+		C0423BE229731487006C4A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHNA6PF8QV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nart.KartuliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kartuli;
+			};
+			name = Debug;
+		};
+		C0423BE329731487006C4A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHNA6PF8QV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nart.KartuliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kartuli;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0423BB229731486006C4A20 /* Build configuration list for PBXProject "Kartuli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0423BD929731487006C4A20 /* Debug */,
+				C0423BDA29731487006C4A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0423BDB29731487006C4A20 /* Build configuration list for PBXNativeTarget "Kartuli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0423BDC29731487006C4A20 /* Debug */,
+				C0423BDD29731487006C4A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0423BDE29731487006C4A20 /* Build configuration list for PBXNativeTarget "KartuliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0423BDF29731487006C4A20 /* Debug */,
+				C0423BE029731487006C4A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0423BE129731487006C4A20 /* Build configuration list for PBXNativeTarget "KartuliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0423BE229731487006C4A20 /* Debug */,
+				C0423BE329731487006C4A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0423BAF29731486006C4A20 /* Project object */;
+}
