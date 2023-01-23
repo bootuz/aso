@@ -11,7 +11,7 @@ import SwiftUI
 struct KartuliApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
