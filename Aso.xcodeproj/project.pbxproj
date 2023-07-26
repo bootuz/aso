@@ -65,6 +65,7 @@
 		C06AEABE297DAFCD00D8AB67 /* ImageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AEABD297DAFCD00D8AB67 /* ImageButtonView.swift */; };
 		C06AEAC029804D6300D8AB67 /* AlphabetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AEABF29804D6300D8AB67 /* AlphabetView.swift */; };
 		C06AEAC72983071800D8AB67 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C06AEAC62983071800D8AB67 /* Algorithms */; };
+		C0846A522A719BDE000609F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C0846A512A719BDE000609F1 /* README.md */; };
 		C0B279CA2977162E0089A3B3 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B279C92977162E0089A3B3 /* AVPlayer.swift */; };
 		C0B279D1297884840089A3B3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B279D0297884840089A3B3 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
@@ -148,6 +149,7 @@
 		C06AEABB297DABD400D8AB67 /* LearningModeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningModeButtonView.swift; sourceTree = "<group>"; };
 		C06AEABD297DAFCD00D8AB67 /* ImageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButtonView.swift; sourceTree = "<group>"; };
 		C06AEABF29804D6300D8AB67 /* AlphabetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetView.swift; sourceTree = "<group>"; };
+		C0846A512A719BDE000609F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C0B279C92977162E0089A3B3 /* AVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
 		C0B279D0297884840089A3B3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +201,7 @@
 		C0423BAE29731486006C4A20 = {
 			isa = PBXGroup;
 			children = (
+				C0846A512A719BDE000609F1 /* README.md */,
 				C0423BB929731486006C4A20 /* Aso */,
 				C0423BCA29731487006C4A20 /* KartuliTests */,
 				C0423BD429731487006C4A20 /* KartuliUITests */,
@@ -467,6 +470,7 @@
 				C06AEAA3297BE55A00D8AB67 /* 10.m4a in Resources */,
 				C06AEA9D297BE55A00D8AB67 /* 33.m4a in Resources */,
 				C06AEAA9297BE55A00D8AB67 /* 6.m4a in Resources */,
+				C0846A522A719BDE000609F1 /* README.md in Resources */,
 				C06AEAA2297BE55A00D8AB67 /* 17.m4a in Resources */,
 				C06AEAAE297BE55A00D8AB67 /* 21.m4a in Resources */,
 				C06AEA96297BE55A00D8AB67 /* 18.m4a in Resources */,
