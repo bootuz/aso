@@ -59,7 +59,6 @@ struct ButtonView: View {
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .padding(.bottom)
                     .foregroundColor(.white)
-
             }
             .shadow(radius: 10, x: 5, y: 5)
         }

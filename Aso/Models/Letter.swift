@@ -9,12 +9,13 @@ import Algorithms
 import Foundation
 
 
-struct Letter: Identifiable, Equatable {
+struct Letter: Identifiable, Equatable, Codable {
     let id: Int
     let georgianLetter: String
     let latinLetter: String
     let cyrillicLetter: String
     let pronounciation: String
+    var isChosen: Bool = true
 
     var georgianAlphabet: String {
         return "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ"
@@ -31,7 +32,7 @@ struct Letter: Identifiable, Equatable {
             Letter(id: 7, georgianLetter: "ზ", latinLetter: "z", cyrillicLetter: "з", pronounciation: "7"),
             Letter(id: 8, georgianLetter: "თ", latinLetter: "t", cyrillicLetter: "т", pronounciation: "8"),
             Letter(id: 9, georgianLetter: "ი", latinLetter: "i", cyrillicLetter: "и", pronounciation: "9"),
-            Letter(id: 10, georgianLetter: "კ", latinLetter: "k’", cyrillicLetter: "", pronounciation: "10"),
+            Letter(id: 10, georgianLetter: "კ", latinLetter: "k’", cyrillicLetter: "к’", pronounciation: "10"),
             Letter(id: 11, georgianLetter: "ლ", latinLetter: "l", cyrillicLetter: "л", pronounciation: "11"),
             Letter(id: 12, georgianLetter: "მ", latinLetter: "m", cyrillicLetter: "м", pronounciation: "12"),
             Letter(id: 13, georgianLetter: "ნ", latinLetter: "n", cyrillicLetter: "н", pronounciation: "13"),
@@ -44,7 +45,7 @@ struct Letter: Identifiable, Equatable {
             Letter(id: 20, georgianLetter: "უ", latinLetter: "u", cyrillicLetter: "у", pronounciation: "20"),
             Letter(id: 21, georgianLetter: "ფ", latinLetter: "p", cyrillicLetter: "п", pronounciation: "21"),
             Letter(id: 22, georgianLetter: "ქ", latinLetter: "k", cyrillicLetter: "к", pronounciation: "22"),
-            Letter(id: 23, georgianLetter: "ღ", latinLetter: "gh", cyrillicLetter: "", pronounciation: "23"),
+            Letter(id: 23, georgianLetter: "ღ", latinLetter: "gh", cyrillicLetter: "г’", pronounciation: "23"),
             Letter(id: 24, georgianLetter: "ყ", latinLetter: "q’", cyrillicLetter: "", pronounciation: "24"),
             Letter(id: 25, georgianLetter: "შ", latinLetter: "sh", cyrillicLetter: "ш", pronounciation: "25"),
             Letter(id: 26, georgianLetter: "ჩ", latinLetter: "ch", cyrillicLetter: "ч", pronounciation: "26"),
@@ -54,7 +55,7 @@ struct Letter: Identifiable, Equatable {
             Letter(id: 30, georgianLetter: "ჭ", latinLetter: "ch’", cyrillicLetter: "ч’", pronounciation: "30"),
             Letter(id: 31, georgianLetter: "ხ", latinLetter: "kh", cyrillicLetter: "х’", pronounciation: "31"),
             Letter(id: 32, georgianLetter: "ჯ", latinLetter: "j", cyrillicLetter: "дж", pronounciation: "32"),
-            Letter(id: 33, georgianLetter: "ჰ", latinLetter: "h", cyrillicLetter: "", pronounciation: "33")
+            Letter(id: 33, georgianLetter: "ჰ", latinLetter: "h", cyrillicLetter: "h", pronounciation: "33")
         ]
     }
 

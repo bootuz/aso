@@ -41,6 +41,14 @@ struct SettingsView: View {
                     )
                 }
                 // MARK: - SECTION 2
+//                Section("quiz mode") {
+//                    NavigationLink {
+//                        LetterSelectionView()
+//                    } label: {
+//                        Label("Letters", systemImage: "character")
+//                    }
+//                }
+                // MARK: - SECTION 3
                 Section("feedback") {
                     SettingsLinkView(
                         title: "Review app",
@@ -53,7 +61,7 @@ struct SettingsView: View {
                         icon: Image(systemName: "bubble.right")
                     )
                 }
-                // MARK: - SECTION 3
+                // MARK: - SECTION 4
                 Section("app info") {
                     SettingsLabelView(
                         title: "Developer",
