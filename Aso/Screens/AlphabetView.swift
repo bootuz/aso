@@ -14,37 +14,30 @@ struct AlphabetView: View {
     let columns = [GridItem(.adaptive(minimum: 70))]
 
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                ImageButtonView(icon: .xmark, size: 20) {
-                    dismiss()
-                }
-                .padding(.trailing, 25)
-                .padding(.top, 20)
-
-            }
-            HStack {
-                Text("Alphabet")
-                    .foregroundColor(.white)
-                    .font(.system(size: 40, weight: .bold))
-                    .padding(.leading, 40)
-                Spacer()
-            }
-            .frame(height: 40)
-            ScrollView {
-                LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(Letter.alphabet) { letter in
-                        ButtonView(letter: letter)
+        NavigationView {
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(Letter.alphabet) { letter in
+                            ButtonView(letter: letter)
+                        }
                     }
                 }
-                .padding(.top, 20)
+                .scrollIndicators(.hidden)
                 .padding(.horizontal)
-            }
+                .background {
+                    BackgroundGradient(colors: [Color("namnLight"), Color("namnDark")])
+                }
+                .navigationTitle("Alphabet")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        ImageButtonView(icon: .xmark, size: 20) {
+                            dismiss()
+                        }
+                    }
+                }
+                .navigationBarTitleDisplayMode(.large)
         }
-        .background {
-            BackgroundGradient(colors: [Color("lightOrca"), Color("darkOrca")])
-        }
+        .preferredColorScheme(.dark)
     }
 }
 
