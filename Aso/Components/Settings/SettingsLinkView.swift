@@ -29,7 +29,7 @@ struct SettingsLinkView: View {
     }
 }
 
-struct LinkView_Previews: PreviewProvider {
+struct SettingsLinkView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsLinkView(title: "Feature request", url: "https://ig.me/m/astemirboziy", icon: Image(systemName: "bubble.right"))
             .previewLayout(.sizeThatFits)

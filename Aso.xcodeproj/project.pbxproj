@@ -13,7 +13,7 @@
 		C0239C052986C264009A89F8 /* SettingsToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0239C042986C264009A89F8 /* SettingsToggleView.swift */; };
 		C0239C072986CF3A009A89F8 /* OptionLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0239C062986CF3A009A89F8 /* OptionLetter.swift */; };
 		C0239C092986D5B2009A89F8 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0239C082986D5B2009A89F8 /* LogoView.swift */; };
-		C0239C0D29882BD0009A89F8 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0239C0C29882BD0009A89F8 /* LinkView.swift */; };
+		C0239C0D29882BD0009A89F8 /* SettingsLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0239C0C29882BD0009A89F8 /* SettingsLinkView.swift */; };
 		C0239C0F298831B8009A89F8 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0239C0E298831B8009A89F8 /* SettingsLabelView.swift */; };
 		C0423BBB29731486006C4A20 /* AsoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BBA29731486006C4A20 /* AsoApp.swift */; };
 		C0423BBF29731487006C4A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0423BBE29731487006C4A20 /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 		C0423BCC29731487006C4A20 /* KartuliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BCB29731487006C4A20 /* KartuliTests.swift */; };
 		C0423BD629731487006C4A20 /* KartuliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BD529731487006C4A20 /* KartuliUITests.swift */; };
 		C0423BD829731487006C4A20 /* KartuliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BD729731487006C4A20 /* KartuliUITestsLaunchTests.swift */; };
-		C0423BE9297314F5006C4A20 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BE8297314F5006C4A20 /* LetterView.swift */; };
+		C0423BE9297314F5006C4A20 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0423BE8297314F5006C4A20 /* CardView.swift */; };
 		C0524A832A6D3F5A000A9D3A /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0524A822A6D3F5A000A9D3A /* QuizManager.swift */; };
 		C06405E829733C260058892F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06405E729733C260058892F /* MainView.swift */; };
 		C06405EB297426820058892F /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06405EA297426820058892F /* Letter.swift */; };
@@ -95,7 +95,7 @@
 		C0239C062986CF3A009A89F8 /* OptionLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionLetter.swift; sourceTree = "<group>"; };
 		C0239C082986D5B2009A89F8 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		C0239C0B2986D839009A89F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		C0239C0C29882BD0009A89F8 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		C0239C0C29882BD0009A89F8 /* SettingsLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLinkView.swift; sourceTree = "<group>"; };
 		C0239C0E298831B8009A89F8 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		C0423BB729731486006C4A20 /* Aso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0423BBA29731486006C4A20 /* AsoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsoApp.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		C0423BD129731487006C4A20 /* AsoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0423BD529731487006C4A20 /* KartuliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartuliUITests.swift; sourceTree = "<group>"; };
 		C0423BD729731487006C4A20 /* KartuliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartuliUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C0423BE8297314F5006C4A20 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		C0423BE8297314F5006C4A20 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C0524A822A6D3F5A000A9D3A /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 		C06405E729733C260058892F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C06405EA297426820058892F /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				C0239C042986C264009A89F8 /* SettingsToggleView.swift */,
-				C0239C0C29882BD0009A89F8 /* LinkView.swift */,
+				C0239C0C29882BD0009A89F8 /* SettingsLinkView.swift */,
 				C0239C0E298831B8009A89F8 /* SettingsLabelView.swift */,
 			);
 			path = Settings;
@@ -279,7 +279,7 @@
 		C0423BE7297314B7006C4A20 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				C0423BE8297314F5006C4A20 /* LetterView.swift */,
+				C0423BE8297314F5006C4A20 /* CardView.swift */,
 				C06405E729733C260058892F /* MainView.swift */,
 				C0B279D0297884840089A3B3 /* SettingsView.swift */,
 				C06AEAB5297BF9B400D8AB67 /* QuizView.swift */,
@@ -530,7 +530,7 @@
 				C0239C0F298831B8009A89F8 /* SettingsLabelView.swift in Sources */,
 				C0239C092986D5B2009A89F8 /* LogoView.swift in Sources */,
 				C06405EB297426820058892F /* Letter.swift in Sources */,
-				C0423BE9297314F5006C4A20 /* LetterView.swift in Sources */,
+				C0423BE9297314F5006C4A20 /* CardView.swift in Sources */,
 				C0239BFF2986BBD6009A89F8 /* SettingsManager.swift in Sources */,
 				C06AEABC297DABD400D8AB67 /* LearningModeButtonView.swift in Sources */,
 				C0239C052986C264009A89F8 /* SettingsToggleView.swift in Sources */,
@@ -540,7 +540,7 @@
 				C06AEABE297DAFCD00D8AB67 /* ImageButtonView.swift in Sources */,
 				C06AEABA297C4D2B00D8AB67 /* Quiz.swift in Sources */,
 				C0239C072986CF3A009A89F8 /* OptionLetter.swift in Sources */,
-				C0239C0D29882BD0009A89F8 /* LinkView.swift in Sources */,
+				C0239C0D29882BD0009A89F8 /* SettingsLinkView.swift in Sources */,
 				C0423BBB29731486006C4A20 /* AsoApp.swift in Sources */,
 				C06AEAB8297C452600D8AB67 /* OptionView.swift in Sources */,
 				C0B279CA2977162E0089A3B3 /* AVPlayer.swift in Sources */,
