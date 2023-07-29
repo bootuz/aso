@@ -8,7 +8,7 @@
 import SwiftUI
 import AVFoundation
 
-struct LetterView: View {
+struct CardView: View {
     @ObservedObject var settings: SettingsManager
 
     @State private var index: Int = 0
@@ -50,21 +50,11 @@ struct LetterView: View {
                                 .foregroundColor(.white)
                                 .shadow(radius: 10, x: 5, y: 5)
                         }
-
                     }
                 }
                 Spacer()
                 ImageButtonView(icon: isFinished ? .repeat : .next, size: 70) {
-                    if index < letters.count - 1 && !isFinished {
-                        index += 1
-                    } else {
-                        isFinished.toggle()
-                        index = 0
-                        if settings.isShuffled {
-                            letters.shuffle()
-                        }
-
-                    }
+                    nextOrRepeat()
                     impact.impactOccurred()
                     if settings.isAutoplayOn && !isFinished {
                         playAfterDelay(sound: letters[index].pronounciation)
@@ -99,7 +89,18 @@ struct LetterView: View {
             }
         }
         .statusBarHidden()
-        
+    }
+
+    private func nextOrRepeat() {
+        if index < letters.count - 1 && !isFinished {
+            index += 1
+        } else {
+            isFinished.toggle()
+            index = 0
+            if settings.isShuffled {
+                letters.shuffle()
+            }
+        }
     }
 
     private func play(sound: String) {
@@ -114,8 +115,8 @@ struct LetterView: View {
     }
 }
 
-struct LetterView_Previews: PreviewProvider {
+struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        LetterView(settings: SettingsManager())
+        CardView(settings: SettingsManager())
     }
 }

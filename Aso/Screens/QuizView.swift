@@ -13,10 +13,8 @@ struct QuizView: View {
     @State private var player: AVPlayer?
     @State private var isResultsPresented: Bool = false
     @State private var isDisabled: Bool = false
-    @Environment(\.dismiss) var dismiss
-
-
     var columns: [GridItem] = Array(repeating: GridItem(.fixed(175), spacing: 0), count: 2)
+    @Environment(\.dismiss) var dismiss
 
     var body: some View {
         NavigationView {
@@ -44,6 +42,14 @@ struct QuizView: View {
                         ImageButtonView(icon: .repeat, size: 70) {
                             quizManager.restartQuiz()
                             isDisabled = false
+                        }
+                    }
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        ImageButtonView(icon: .xmark, size: 20) {
+                            dismiss()
+                            quizManager.resetQuiz()
                         }
                     }
                 }
@@ -98,10 +104,11 @@ struct QuizView: View {
                     }
                 }
             }
-
         }
         .statusBarHidden()
     }
+
+
 
     private func play(sound: String) {
         self.player = AVPlayer.preparedPlayer(with: sound)

@@ -22,7 +22,7 @@ struct MainView: View {
                         isLetterViewPresented.toggle()
                     }
                     .fullScreenCover(isPresented: $isLetterViewPresented) {
-                        LetterView(settings: SettingsManager())
+                        CardView(settings: SettingsManager())
                     }
                     LearningModeButtonView(title: "Quiz") {
                         isQuizViewPresented.toggle()
@@ -58,6 +58,7 @@ struct MainView: View {
                 }
             }
         }
+        .preferredColorScheme(.dark)
     }
 }
 

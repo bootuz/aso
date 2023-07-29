@@ -10,6 +10,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @ObservedObject var settings: SettingsManager
+    @State var isSettingLetterViewPresented: Bool = false
     @Environment(\.dismiss) var dismiss
     let impact = UIImpactFeedbackGenerator(style: .medium)
 
@@ -34,7 +35,7 @@ struct SettingsView: View {
                         toggle: $settings.isAutoplayOn
                     )
                     SettingsToggleView(
-                        title: "Tanslit",
+                        title: "Show answer",
                         icon: "eye",
                         toggle: $settings.isDisplayAnswer
                     )
@@ -81,6 +82,7 @@ struct SettingsView: View {
                     }
                 }
             }
+            .preferredColorScheme(.light)
         }
     }
 

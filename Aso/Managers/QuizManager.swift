@@ -54,13 +54,6 @@ class QuizManager: ObservableObject {
 
     }
 
-
-    static func getQuestion() -> Question {
-        let question = QuizManager.questions[currentIndex]
-        QuizManager.currentIndex += 1
-        return question
-    }
-
     func restartQuiz() {
         quizCompleted = false
         QuizManager.currentIndex = 0
@@ -79,6 +72,12 @@ class QuizManager: ObservableObject {
 extension QuizManager {
     
     static var questions: [Question] = QuizManager.prepareQuestions()
+
+    static func getQuestion() -> Question {
+        let question = QuizManager.questions[currentIndex]
+        QuizManager.currentIndex += 1
+        return question
+    }
 
     static func prepareQuestions() -> [Question] {
         return Letter.alphabet.shuffled().map { letter in
