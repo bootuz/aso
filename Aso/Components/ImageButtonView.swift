@@ -12,7 +12,7 @@ struct ImageButtonView: View {
     var size: CGFloat
     var weight: Font.Weight = .regular
     var action: () -> Void
-
+    
     var body: some View {
         Button {
             action()
@@ -28,7 +28,7 @@ struct ImageButtonView: View {
 struct ImageButton_Previews: PreviewProvider {
     static var previews: some View {
         ImageButtonView(icon: .xmark, size: 25) {
-
+            
         }
         .preferredColorScheme(.dark)
         .previewLayout(.sizeThatFits)

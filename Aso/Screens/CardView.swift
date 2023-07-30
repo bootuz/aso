@@ -10,16 +10,16 @@ import AVFoundation
 
 struct CardView: View {
     @ObservedObject var settings: SettingsManager
-
+    
     @State private var index: Int = 0
     @State private var isFinished: Bool = false
     @State private var player: AVPlayer?
     @State var letters: [Letter] = Letter.alphabet
-
+    
     @Environment(\.dismiss) var dismiss
-
+    
     let impact = UIImpactFeedbackGenerator(style: .medium)
-
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -90,7 +90,7 @@ struct CardView: View {
         }
         .statusBarHidden()
     }
-
+    
     private func nextOrRepeat() {
         if index < letters.count - 1 && !isFinished {
             index += 1
@@ -102,7 +102,7 @@ struct CardView: View {
             }
         }
     }
-
+    
     private func play(sound: String) {
         self.player = AVPlayer.preparedPlayer(with: sound)
         self.player?.play()

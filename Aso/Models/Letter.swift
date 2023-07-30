@@ -9,7 +9,7 @@ import Algorithms
 import Foundation
 
 
-struct Letter: Identifiable, Equatable, Codable {
+struct Letter: Identifiable, Equatable, Codable, Hashable {
     let id: Int
     let georgianLetter: String
     let latinLetter: String

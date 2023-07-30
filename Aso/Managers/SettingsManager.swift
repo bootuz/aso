@@ -12,4 +12,10 @@ class SettingsManager: ObservableObject {
     @AppStorage("isShuffled") var isShuffled: Bool = false
     @AppStorage("isAutoplayOn") var isAutoplayOn: Bool = true
     @AppStorage("isDisplayAnswer") var isDisplayAnswer: Bool = true
+
+
+    let instagramLink = "https://www.instagram.com/astemirboziy/"
+    let igMeLink = "https://ig.me/m/astemirboziy"
+    let urlString = "https://itunes.apple.com/app/1?action=write-review"
+    let reviewLink = "https://itunes.apple.com/app/1?action=write-review"
 }

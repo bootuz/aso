@@ -14,10 +14,6 @@ struct SettingsView: View {
     @Environment(\.dismiss) var dismiss
     let impact = UIImpactFeedbackGenerator(style: .medium)
 
-    let instagramLink = "https://www.instagram.com/astemirboziy/"
-    let igMeLink = "https://ig.me/m/astemirboziy"
-    let urlString = "https://itunes.apple.com/app/1?action=write-review"
-    let reviewLink = "https://itunes.apple.com/app/1?action=write-review"
 
     var body: some View {
         NavigationView {
@@ -52,12 +48,12 @@ struct SettingsView: View {
                 Section("feedback") {
                     SettingsLinkView(
                         title: "Review app",
-                        url: reviewLink,
+                        url: settings.reviewLink,
                         icon: Image(systemName: "star")
                     )
                     SettingsLinkView(
                         title: "Feature request",
-                        url: igMeLink,
+                        url: settings.igMeLink,
                         icon: Image(systemName: "bubble.right")
                     )
                 }
@@ -75,7 +71,7 @@ struct SettingsView: View {
                     )
                     SettingsLinkView(
                         title: "Intagram",
-                        url: instagramLink,
+                        url: settings.instagramLink,
                         icon: Image("instagram")
                     )
                 }
@@ -95,7 +91,7 @@ struct SettingsView: View {
     }
 
     private func rateApp() {
-        guard let url = URL(string: urlString), UIApplication.shared.canOpenURL(url) else { return }
+        guard let url = URL(string: settings.urlString), UIApplication.shared.canOpenURL(url) else { return }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 

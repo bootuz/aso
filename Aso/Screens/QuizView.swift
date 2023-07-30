@@ -15,7 +15,7 @@ struct QuizView: View {
     @State private var isDisabled: Bool = false
     var columns: [GridItem] = Array(repeating: GridItem(.fixed(175), spacing: 0), count: 2)
     @Environment(\.dismiss) var dismiss
-
+    
     var body: some View {
         NavigationView {
             if quizManager.quizCompleted {
@@ -107,14 +107,14 @@ struct QuizView: View {
         }
         .statusBarHidden()
     }
-
-
-
+    
+    
+    
     private func play(sound: String) {
         self.player = AVPlayer.preparedPlayer(with: sound)
         self.player?.play()
     }
-
+    
     private func playAfterDelay(sound: String) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             play(sound: sound)

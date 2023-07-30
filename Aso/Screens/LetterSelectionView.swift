@@ -8,30 +8,22 @@
 import SwiftUI
 
 struct LetterSelectionView: View {
-    @ObservedObject private var viewModel = LetterSelectionViewModel()
+    @ObservedObject private var viewModel = LettersViewModel()
+    @State var selectKeeper = Set<Letter>()
 
     var body: some View {
-        Form {
-            ForEach(Letter.alphabet) { letter in
+        List(Letter.alphabet, selection: $selectKeeper) { letter in
+            HStack {
+                Text(letter.georgianLetter)
+                Spacer()
                 if letter.isChosen {
-                    HStack {
-                        Text(letter.georgianLetter)
-                        Spacer()
-                        Image(systemName: "checkmark")
-                            .foregroundColor(.blue)
-                    }
-                } else {
-                    Text(letter.georgianLetter)
+                    Image(systemName: "checkmark")
                 }
             }
         }
         .toolbar {
-            ToolbarItem(placement: .confirmationAction) {
-                Button {
-
-                } label: {
-                    Text("Select all")
-                }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                EditButton()
             }
         }
         .navigationTitle("Letters")

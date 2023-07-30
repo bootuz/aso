@@ -12,7 +12,7 @@ struct MainView: View {
     @State private var isQuizViewPresented: Bool = false
     @State private var isLetterViewPresented: Bool = false
     @State private var isAlphabetViewPresented: Bool = false
-
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 130) {
@@ -48,7 +48,7 @@ struct MainView: View {
                     .popover(isPresented: $isAlphabetViewPresented) {
                         AlphabetView()
                     }
-
+                    
                     ImageButtonView(icon: .gear, size: 25, weight: .bold) {
                         isSettingsPresented.toggle()
                     }

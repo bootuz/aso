@@ -11,6 +11,7 @@ struct OptionLetter: View {
     let georgianLetter: String
     let color: Color
     let backgroundGradient: BackgroundGradient
+    
     var body: some View {
         Text(georgianLetter)
             .font(.system(size: 100, weight: .bold))

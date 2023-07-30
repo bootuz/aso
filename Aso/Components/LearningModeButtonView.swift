@@ -10,7 +10,7 @@ import SwiftUI
 struct LearningModeButtonView: View {
     var title: String
     var action: (() -> Void)
-
+    
     var body: some View {
         Button {
             action()
@@ -31,7 +31,7 @@ struct LearningModeButtonView: View {
 struct LearningModeButton_Previews: PreviewProvider {
     static var previews: some View {
         LearningModeButtonView(title: "Quiz") {
-
+            
         }
         .previewLayout(.sizeThatFits)
     }

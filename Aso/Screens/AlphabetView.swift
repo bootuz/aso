@@ -15,27 +15,27 @@ struct AlphabetView: View {
 
     var body: some View {
         NavigationView {
-                ScrollView {
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(Letter.alphabet) { letter in
-                            ButtonView(letter: letter)
-                        }
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(Letter.alphabet) { letter in
+                        ButtonView(letter: letter)
                     }
                 }
-                .scrollIndicators(.hidden)
-                .padding(.horizontal)
-                .background {
-                    BackgroundGradient(colors: [Color("namnLight"), Color("namnDark")])
-                }
-                .navigationTitle("Alphabet")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        ImageButtonView(icon: .xmark, size: 20) {
-                            dismiss()
-                        }
+            }
+            .scrollIndicators(.hidden)
+            .padding(.horizontal)
+            .background {
+                BackgroundGradient(colors: [Color("namnLight"), Color("namnDark")])
+            }
+            .navigationTitle("Alphabet")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    ImageButtonView(icon: .xmark, size: 20) {
+                        dismiss()
                     }
                 }
-                .navigationBarTitleDisplayMode(.large)
+            }
+            .navigationBarTitleDisplayMode(.large)
         }
         .preferredColorScheme(.dark)
     }

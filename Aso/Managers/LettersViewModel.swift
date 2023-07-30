@@ -8,8 +8,8 @@
 import Foundation
 
 
-class LetterSelectionViewModel: ObservableObject {
-    @Published var allLetters: [Letter] = [] {
+class LettersViewModel: ObservableObject {
+    @Published var allLetters: [Letter] = Letter.alphabet {
         didSet {
             saveLettersToUserDefaults()
         }
