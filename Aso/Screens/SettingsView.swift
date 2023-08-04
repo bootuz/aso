@@ -37,12 +37,16 @@ struct SettingsView: View {
                     )
                 }
                 // MARK: - SECTION 2
-//                Section("quiz mode") {
+//                Section {
 //                    NavigationLink {
 //                        LetterSelectionView()
 //                    } label: {
 //                        Label("Letters", systemImage: "character")
 //                    }
+//                } header: {
+//                    Text("quiz mode")
+//                } footer: {
+//                    Text("Select letters you want to practice")
 //                }
                 // MARK: - SECTION 3
                 Section("feedback") {
