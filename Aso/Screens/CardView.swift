@@ -9,7 +9,7 @@ import SwiftUI
 import AVFoundation
 
 struct CardView: View {
-    @ObservedObject var settings: SettingsManager
+    @ObservedObject var settings: SettingsManager = SettingsManager()
     
     @State private var index: Int = 0
     @State private var isFinished: Bool = false
@@ -117,6 +117,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(settings: SettingsManager())
+        CardView()
     }
 }
