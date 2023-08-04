@@ -9,13 +9,16 @@ import SwiftUI
 import AVFoundation
 
 struct QuizView: View {
-    @ObservedObject var quizManager: QuizManager
+    @ObservedObject var quizManager: QuizManager = QuizManager()
+
     @State private var player: AVPlayer?
     @State private var isResultsPresented: Bool = false
     @State private var isDisabled: Bool = false
+
     var columns: [GridItem] = Array(repeating: GridItem(.fixed(175), spacing: 0), count: 2)
+
     @Environment(\.dismiss) var dismiss
-    
+
     var body: some View {
         NavigationView {
             if quizManager.quizCompleted {
@@ -23,7 +26,7 @@ struct QuizView: View {
                     VStack {
                         Text("Finished!")
                             .font(.system(size: 60, weight: .bold, design: .rounded))
-                        Text("Your score:\n \(quizManager.successGuesses) of 33")
+                        Text("Your score:\n \(quizManager.successGuesses) of \(QuizManager.questions.count)")
                             .padding(.top)
                             .font(.system(size: 40, weight: .medium, design: .rounded))
                     }
@@ -107,14 +110,13 @@ struct QuizView: View {
         }
         .statusBarHidden()
     }
-    
-    
-    
+
+
     private func play(sound: String) {
         self.player = AVPlayer.preparedPlayer(with: sound)
         self.player?.play()
     }
-    
+
     private func playAfterDelay(sound: String) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             play(sound: sound)
@@ -125,6 +127,6 @@ struct QuizView: View {
 struct QuizView_Previews: PreviewProvider {
     @State static var isDisabled: Bool = false
     static var previews: some View {
-        QuizView(quizManager: QuizManager())
+        QuizView()
     }
 }
