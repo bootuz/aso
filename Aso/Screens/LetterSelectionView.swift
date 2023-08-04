@@ -12,18 +12,33 @@ struct LetterSelectionView: View {
     @State var selectKeeper = Set<Letter>()
 
     var body: some View {
-        List(Letter.alphabet, selection: $selectKeeper) { letter in
+        List(viewModel.allLetters, selection: $selectKeeper) { letter in
             HStack {
-                Text(letter.georgianLetter)
-                Spacer()
-                if letter.isChosen {
-                    Image(systemName: "checkmark")
+                Button {
+                    viewModel.updateIsChosen(for: letter, isChosen: !letter.isChosen)
+                } label: {
+                    Label {
+                        Text("\(letter.georgianLetter) - \(letter.latinLetter)")
+                            .font(.system(size: 20))
+                            .fontWeight(.medium)
+                            .foregroundColor(.black)
+                        Spacer()
+                        if letter.isChosen {
+                            Image(systemName: "checkmark")
+                        }
+                    } icon: {
+                        EmptyView()
+                    }
                 }
             }
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                EditButton()
+                Button("Select all") {
+                    for letter in viewModel.allLetters {
+                        viewModel.updateIsChosen(for: letter, isChosen: true)
+                    }
+                }
             }
         }
         .navigationTitle("Letters")
@@ -32,6 +47,8 @@ struct LetterSelectionView: View {
 
 struct LetterSelectionView_Previews: PreviewProvider {
     static var previews: some View {
-        LetterSelectionView()
+        NavigationView {
+            LetterSelectionView()
+        }
     }
 }
