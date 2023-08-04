@@ -60,6 +60,6 @@ struct Letter: Identifiable, Equatable, Codable, Hashable {
     }
 
     static func == (lhs: Letter, rhs: Letter) -> Bool {
-            return lhs.georgianLetter == rhs.georgianLetter
-        }
+        return lhs.georgianLetter == rhs.georgianLetter
+    }
 }
