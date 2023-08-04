@@ -9,11 +9,13 @@ import Foundation
 
 
 class LettersViewModel: ObservableObject {
-    @Published var allLetters: [Letter] = Letter.alphabet {
+    @Published var allLetters: [Letter] = [] {
         didSet {
             saveLettersToUserDefaults()
         }
     }
+
+    var selectedLetters: [Letter] = []
 
     init() {
         loadLettersFromUserDefaults()
@@ -23,7 +25,7 @@ class LettersViewModel: ObservableObject {
 
     private func saveLettersToUserDefaults() {
         let encoder = JSONEncoder()
-        if let encoded = try? encoder.encode(Letter.alphabet) {
+        if let encoded = try? encoder.encode(allLetters) {
             UserDefaults.standard.set(encoded, forKey: chosenLettersKey)
         }
     }
@@ -32,7 +34,7 @@ class LettersViewModel: ObservableObject {
         if let data = UserDefaults.standard.data(forKey: chosenLettersKey) {
             let decoder = JSONDecoder()
             if let decoded = try? decoder.decode([Letter].self, from: data) {
-                allLetters = decoded
+                selectedLetters = decoded
             }
         }
     }
@@ -43,3 +45,4 @@ class LettersViewModel: ObservableObject {
         }
     }
 }
+
