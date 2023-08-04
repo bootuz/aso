@@ -9,10 +9,6 @@ import Algorithms
 import Foundation
 import SwiftUI
 
-enum EmptyArrayError: Error {
-    case emptyArray
-}
-
 
 class QuizManager: ObservableObject {
     private let generator = UINotificationFeedbackGenerator()
@@ -21,7 +17,7 @@ class QuizManager: ObservableObject {
     @Published var question: Question = QuizManager.getQuestion()
 
     var successGuesses: Int = 0
-    var quizCompleted: Bool = false
+    @Published var quizCompleted: Bool = false
 
 
     func verifyAnswer(selectedOption: Option) {
@@ -43,19 +39,18 @@ class QuizManager: ObservableObject {
             }
         }
 
-        if QuizManager.currentIndex > 32 {
-            quizCompleted = true
-        } else {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            if QuizManager.currentIndex >= QuizManager.questions.count {
+                self.quizCompleted = true
+            } else {
                 self.question = QuizManager.getQuestion()
             }
         }
-
-
     }
 
     func restartQuiz() {
         quizCompleted = false
+        successGuesses = 0
         QuizManager.currentIndex = 0
         QuizManager.questions.shuffle()
         question = QuizManager.getQuestion()
@@ -63,6 +58,7 @@ class QuizManager: ObservableObject {
 
     func resetQuiz() {
         quizCompleted = false
+        successGuesses = 0
         QuizManager.currentIndex = 0
         QuizManager.questions.shuffle()
     }
