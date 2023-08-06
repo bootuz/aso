@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C014D7122A7FABD800395FCF /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014D7112A7FABD800395FCF /* SoundManager.swift */; };
 		C0239BF42985C926009A89F8 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0239BF32985C926009A89F8 /* Icons.swift */; };
 		C0239BFF2986BBD6009A89F8 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0239BFE2986BBD6009A89F8 /* SettingsManager.swift */; };
 		C0239C032986C096009A89F8 /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0239C022986C096009A89F8 /* BackgroundGradient.swift */; };
@@ -90,6 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C014D7112A7FABD800395FCF /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		C0239BF32985C926009A89F8 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		C0239BFE2986BBD6009A89F8 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		C0239C022986C096009A89F8 /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				C0239BFE2986BBD6009A89F8 /* SettingsManager.swift */,
 				C0524A822A6D3F5A000A9D3A /* QuizManager.swift */,
 				C0846A732A752462000609F1 /* LettersViewModel.swift */,
+				C014D7112A7FABD800395FCF /* SoundManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				C0239BF42985C926009A89F8 /* Icons.swift in Sources */,
 				C06AEABE297DAFCD00D8AB67 /* ImageButtonView.swift in Sources */,
 				C06AEABA297C4D2B00D8AB67 /* Quiz.swift in Sources */,
+				C014D7122A7FABD800395FCF /* SoundManager.swift in Sources */,
 				C0239C072986CF3A009A89F8 /* OptionLetter.swift in Sources */,
 				C0239C0D29882BD0009A89F8 /* SettingsLinkView.swift in Sources */,
 				C0423BBB29731486006C4A20 /* AsoApp.swift in Sources */,
