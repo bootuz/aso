@@ -13,7 +13,6 @@ struct CardView: View {
     
     @State private var index: Int = 0
     @State private var isFinished: Bool = false
-    @State private var player: AVPlayer?
     @State var letters: [Letter] = Letter.alphabet
     
     @Environment(\.dismiss) var dismiss
@@ -37,11 +36,11 @@ struct CardView: View {
                             .foregroundColor(.white)
                             .shadow(radius: 10, x: 5, y: 5)
                             .onTapGesture {
-                                play(sound: letters[index].pronounciation)
+                                SoundManager.shared.play(sound: letters[index].pronounciation)
                             }
                             .onAppear {
                                 if settings.isAutoplayOn {
-                                    playAfterDelay(sound: letters[index].pronounciation)
+                                    SoundManager.shared.play(sound: letters[index].pronounciation, delay: 0.3)
                                 }
                             }
                         if settings.isDisplayAnswer {
@@ -57,7 +56,7 @@ struct CardView: View {
                     nextOrRepeat()
                     impact.impactOccurred()
                     if settings.isAutoplayOn && !isFinished {
-                        playAfterDelay(sound: letters[index].pronounciation)
+                        SoundManager.shared.play(sound: letters[index].pronounciation, delay: 0.3)
                     }
                 }
             } //: VSTACK
@@ -100,17 +99,6 @@ struct CardView: View {
             if settings.isShuffled {
                 letters.shuffle()
             }
-        }
-    }
-    
-    private func play(sound: String) {
-        self.player = AVPlayer.preparedPlayer(with: sound)
-        self.player?.play()
-    }
-    
-    private func playAfterDelay(sound: String) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            play(sound: sound)
         }
     }
 }

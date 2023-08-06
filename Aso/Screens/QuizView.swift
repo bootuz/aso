@@ -11,7 +11,6 @@ import AVFoundation
 struct QuizView: View {
     @ObservedObject var quizManager: QuizManager = QuizManager()
 
-    @State private var player: AVPlayer?
     @State private var isResultsPresented: Bool = false
     @State private var isDisabled: Bool = false
 
@@ -65,10 +64,10 @@ struct QuizView: View {
                         .shadow(radius: 10, x: 5, y: 5)
                         .padding(.bottom, 30)
                         .onAppear {
-                            playAfterDelay(sound: quizManager.question.pronounciation)
+                            SoundManager.shared.play(sound: quizManager.question.pronounciation, delay: 0.2)
                         }
                         .onChange(of: quizManager.question.title) { _ in
-                            playAfterDelay(sound: quizManager.question.pronounciation)
+                            SoundManager.shared.play(sound: quizManager.question.pronounciation, delay: 0.2)
                             isDisabled = false
                         }
                     Spacer()
@@ -109,18 +108,6 @@ struct QuizView: View {
             }
         }
         .statusBarHidden()
-    }
-
-
-    private func play(sound: String) {
-        self.player = AVPlayer.preparedPlayer(with: sound)
-        self.player?.play()
-    }
-
-    private func playAfterDelay(sound: String) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            play(sound: sound)
-        }
     }
 }
 
