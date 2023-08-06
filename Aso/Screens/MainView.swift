@@ -16,7 +16,10 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 130) {
-                LogoView()
+                Text("ასო")
+                    .foregroundColor(.white)
+                    .font(.system(size: 150, weight: .bold))
+                    .shadow(radius: 10, x: 5, y: 5)
                 VStack(alignment: .center) {
                     LearningModeButtonView(title: "Cards") {
                         isLetterViewPresented.toggle()

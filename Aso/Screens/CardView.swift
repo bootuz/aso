@@ -25,7 +25,7 @@ struct CardView: View {
                 VStack {
                     if isFinished {
                         Text("Finished!")
-                            .font(.system(size: 80, weight: .bold))
+                            .font(.system(size: 80, weight: .bold, design: .rounded))
                             .foregroundColor(.white)
                             .shadow(radius: 10, x: 5, y: 5)
                             .frame(height: 300)
