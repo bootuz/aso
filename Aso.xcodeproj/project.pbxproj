@@ -68,7 +68,6 @@
 		C0846A522A719BDE000609F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C0846A512A719BDE000609F1 /* README.md */; };
 		C0846A742A752462000609F1 /* LettersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0846A732A752462000609F1 /* LettersViewModel.swift */; };
 		C0846A762A7524C0000609F1 /* LetterSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0846A752A7524C0000609F1 /* LetterSelectionView.swift */; };
-		C0B279CA2977162E0089A3B3 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B279C92977162E0089A3B3 /* AVPlayer.swift */; };
 		C0B279D1297884840089A3B3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B279D0297884840089A3B3 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -154,7 +153,6 @@
 		C0846A512A719BDE000609F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C0846A732A752462000609F1 /* LettersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersViewModel.swift; sourceTree = "<group>"; };
 		C0846A752A7524C0000609F1 /* LetterSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterSelectionView.swift; sourceTree = "<group>"; };
-		C0B279C92977162E0089A3B3 /* AVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
 		C0B279D0297884840089A3B3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,7 +228,6 @@
 				C0239BF22985C90C009A89F8 /* Utils */,
 				C06AEAC12982FC1100D8AB67 /* Managers */,
 				C0B279CB297716BB0089A3B3 /* Resources */,
-				C0B279C82977161A0089A3B3 /* Extensions */,
 				C06405E9297426710058892F /* Models */,
 				C0423BE7297314B7006C4A20 /* Screens */,
 				C0423BE6297314B0006C4A20 /* Components */,
@@ -310,14 +307,6 @@
 				C014D7112A7FABD800395FCF /* SoundManager.swift */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		C0B279C82977161A0089A3B3 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				C0B279C92977162E0089A3B3 /* AVPlayer.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C0B279CB297716BB0089A3B3 /* Resources */ = {
@@ -551,7 +540,6 @@
 				C0239C0D29882BD0009A89F8 /* SettingsLinkView.swift in Sources */,
 				C0423BBB29731486006C4A20 /* AsoApp.swift in Sources */,
 				C06AEAB8297C452600D8AB67 /* OptionView.swift in Sources */,
-				C0B279CA2977162E0089A3B3 /* AVPlayer.swift in Sources */,
 				C0239C032986C096009A89F8 /* BackgroundGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
