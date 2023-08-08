@@ -10,7 +10,6 @@ import AVFoundation
 
 struct AlphabetView: View {
     @Environment(\.dismiss) var dismiss
-
     let columns = [GridItem(.adaptive(minimum: 70))]
 
     var body: some View {
@@ -44,11 +43,10 @@ struct AlphabetView: View {
 
 struct ButtonView: View {
     let letter: Letter
-    @State private var player: AVPlayer?
 
     var body: some View {
         Button {
-            play(sound: letter.pronounciation)
+            SoundManager.shared.play(sound: letter.pronounciation)
         } label: {
             VStack {
                 Text(letter.georgianLetter)
@@ -62,11 +60,6 @@ struct ButtonView: View {
             }
             .shadow(radius: 10, x: 5, y: 5)
         }
-    }
-
-    private func play(sound: String) {
-        self.player = AVPlayer.preparedPlayer(with: sound)
-        self.player?.play()
     }
 }
 
