@@ -15,7 +15,6 @@ struct QuizView: View {
     @State private var isDisabled: Bool = false
 
     var columns: [GridItem] = Array(repeating: GridItem(.fixed(175), spacing: 0), count: 2)
-
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
@@ -29,6 +28,7 @@ struct QuizView: View {
                             .padding(.top)
                             .font(.system(size: 40, weight: .medium, design: .rounded))
                     }
+                    .shadow(radius: 10, x: 5, y: 5)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding()

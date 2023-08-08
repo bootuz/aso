@@ -68,5 +68,8 @@ struct AlphabetView_Previews: PreviewProvider {
         AlphabetView()
         ButtonView(letter: Letter.alphabet[0])
             .previewLayout(.sizeThatFits)
+            .background {
+                BackgroundGradient(colors: [Color("namnLight"), Color("namnDark")])
+            }
     }
 }
