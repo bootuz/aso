@@ -16,6 +16,7 @@ struct CardView: View {
     @State var letters: [Letter] = Letter.alphabet
     
     @Environment(\.dismiss) var dismiss
+    @Environment(\.requestReview) var requestReview
     
     let impact = UIImpactFeedbackGenerator(style: .medium)
     
@@ -78,6 +79,7 @@ struct CardView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     ImageButtonView(icon: .xmark, size: 20) {
                         dismiss()
+                        requestReview()
                     }
                 }
             }
